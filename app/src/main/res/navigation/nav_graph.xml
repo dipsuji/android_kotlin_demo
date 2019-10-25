@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="android.kotlin.demo.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_handlerFragment"
+            app:destination="@id/handlerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_broadcastReceiverFragment"
+            app:destination="@id/broadcastReceiverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/handlerFragment"
+        android:name="android.kotlin.demo.HandlerFragment"
+        android:label="fragment_handler"
+        tools:layout="@layout/fragment_handler" />
+    <fragment
+        android:id="@+id/broadcastReceiverFragment"
+        android:name="android.kotlin.demo.BroadcastReceiverFragment"
+        android:label="fragment_broadcast_receiver"
+        tools:layout="@layout/fragment_broadcast_receiver" />
+</navigation>

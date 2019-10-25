@@ -7,4 +7,6 @@
     <string name="handler_run_handler">Run Handler</string>
     <string name="handler_remove_callbacks">Remove Callbacks</string>
     <string name="handler_call_back_removed">Call back removed.</string>
+    <string name="handler_demo">Handler Demo</string>
+    <string name="broadcast_demo">Broadcast Demo</string>
 </resources>
